@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BBDA1CA1BFDAA690074BB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */; };
+		1BBDA1CC1BFDAA690074BB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */; };
+		1BBDA1CF1BFDAA690074BB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CD1BFDAA690074BB58 /* Main.storyboard */; };
+		1BBDA1D21BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1D01BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld */; };
+		1BBDA1D41BFDAA690074BB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BBDA1D31BFDAA690074BB58 /* Assets.xcassets */; };
+		1BBDA1D71BFDAA690074BB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBDA1D51BFDAA690074BB58 /* LaunchScreen.storyboard */; };
+		1BBDA1E21BFDAA690074BB58 /* CanvasWithReplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1E11BFDAA690074BB58 /* CanvasWithReplayTests.swift */; };
+		1BBDA1ED1BFDAA690074BB58 /* CanvasWithReplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1EC1BFDAA690074BB58 /* CanvasWithReplayUITests.swift */; };
+		1BBDA1FB1BFDAED80074BB58 /* CustomBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1FA1BFDAED80074BB58 /* CustomBezierPath.swift */; };
+		1BBDA1FD1BFDB7AB0074BB58 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1FC1BFDB7AB0074BB58 /* CanvasView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BBDA1DE1BFDAA690074BB58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BBDA1BE1BFDAA690074BB58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BBDA1C51BFDAA690074BB58;
+			remoteInfo = CanvasWithReplay;
+		};
+		1BBDA1E91BFDAA690074BB58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BBDA1BE1BFDAA690074BB58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BBDA1C51BFDAA690074BB58;
+			remoteInfo = CanvasWithReplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BBDA1C61BFDAA690074BB58 /* CanvasWithReplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvasWithReplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BBDA1CE1BFDAA690074BB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BBDA1D11BFDAA690074BB58 /* CanvasWithReplay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CanvasWithReplay.xcdatamodel; sourceTree = "<group>"; };
+		1BBDA1D31BFDAA690074BB58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BBDA1D61BFDAA690074BB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BBDA1D81BFDAA690074BB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BBDA1DD1BFDAA690074BB58 /* CanvasWithReplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasWithReplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BBDA1E11BFDAA690074BB58 /* CanvasWithReplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasWithReplayTests.swift; sourceTree = "<group>"; };
+		1BBDA1E31BFDAA690074BB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BBDA1E81BFDAA690074BB58 /* CanvasWithReplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasWithReplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BBDA1EC1BFDAA690074BB58 /* CanvasWithReplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasWithReplayUITests.swift; sourceTree = "<group>"; };
+		1BBDA1EE1BFDAA690074BB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BBDA1FA1BFDAED80074BB58 /* CustomBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBezierPath.swift; sourceTree = "<group>"; };
+		1BBDA1FC1BFDB7AB0074BB58 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BBDA1C31BFDAA690074BB58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BBDA1DA1BFDAA690074BB58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BBDA1E51BFDAA690074BB58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BBDA1BD1BFDAA690074BB58 = {
+			isa = PBXGroup;
+			children = (
+				1BBDA1C81BFDAA690074BB58 /* CanvasWithReplay */,
+				1BBDA1E01BFDAA690074BB58 /* CanvasWithReplayTests */,
+				1BBDA1EB1BFDAA690074BB58 /* CanvasWithReplayUITests */,
+				1BBDA1C71BFDAA690074BB58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BBDA1C71BFDAA690074BB58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BBDA1C61BFDAA690074BB58 /* CanvasWithReplay.app */,
+				1BBDA1DD1BFDAA690074BB58 /* CanvasWithReplayTests.xctest */,
+				1BBDA1E81BFDAA690074BB58 /* CanvasWithReplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BBDA1C81BFDAA690074BB58 /* CanvasWithReplay */ = {
+			isa = PBXGroup;
+			children = (
+				1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */,
+				1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */,
+				1BBDA1CD1BFDAA690074BB58 /* Main.storyboard */,
+				1BBDA1D31BFDAA690074BB58 /* Assets.xcassets */,
+				1BBDA1D51BFDAA690074BB58 /* LaunchScreen.storyboard */,
+				1BBDA1D81BFDAA690074BB58 /* Info.plist */,
+				1BBDA1D01BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld */,
+				1BBDA1FA1BFDAED80074BB58 /* CustomBezierPath.swift */,
+				1BBDA1FC1BFDB7AB0074BB58 /* CanvasView.swift */,
+			);
+			path = CanvasWithReplay;
+			sourceTree = "<group>";
+		};
+		1BBDA1E01BFDAA690074BB58 /* CanvasWithReplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BBDA1E11BFDAA690074BB58 /* CanvasWithReplayTests.swift */,
+				1BBDA1E31BFDAA690074BB58 /* Info.plist */,
+			);
+			path = CanvasWithReplayTests;
+			sourceTree = "<group>";
+		};
+		1BBDA1EB1BFDAA690074BB58 /* CanvasWithReplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BBDA1EC1BFDAA690074BB58 /* CanvasWithReplayUITests.swift */,
+				1BBDA1EE1BFDAA690074BB58 /* Info.plist */,
+			);
+			path = CanvasWithReplayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BBDA1C51BFDAA690074BB58 /* CanvasWithReplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BBDA1F11BFDAA690074BB58 /* Build configuration list for PBXNativeTarget "CanvasWithReplay" */;
+			buildPhases = (
+				1BBDA1C21BFDAA690074BB58 /* Sources */,
+				1BBDA1C31BFDAA690074BB58 /* Frameworks */,
+				1BBDA1C41BFDAA690074BB58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CanvasWithReplay;
+			productName = CanvasWithReplay;
+			productReference = 1BBDA1C61BFDAA690074BB58 /* CanvasWithReplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BBDA1DC1BFDAA690074BB58 /* CanvasWithReplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BBDA1F41BFDAA690074BB58 /* Build configuration list for PBXNativeTarget "CanvasWithReplayTests" */;
+			buildPhases = (
+				1BBDA1D91BFDAA690074BB58 /* Sources */,
+				1BBDA1DA1BFDAA690074BB58 /* Frameworks */,
+				1BBDA1DB1BFDAA690074BB58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BBDA1DF1BFDAA690074BB58 /* PBXTargetDependency */,
+			);
+			name = CanvasWithReplayTests;
+			productName = CanvasWithReplayTests;
+			productReference = 1BBDA1DD1BFDAA690074BB58 /* CanvasWithReplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BBDA1E71BFDAA690074BB58 /* CanvasWithReplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BBDA1F71BFDAA690074BB58 /* Build configuration list for PBXNativeTarget "CanvasWithReplayUITests" */;
+			buildPhases = (
+				1BBDA1E41BFDAA690074BB58 /* Sources */,
+				1BBDA1E51BFDAA690074BB58 /* Frameworks */,
+				1BBDA1E61BFDAA690074BB58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BBDA1EA1BFDAA690074BB58 /* PBXTargetDependency */,
+			);
+			name = CanvasWithReplayUITests;
+			productName = CanvasWithReplayUITests;
+			productReference = 1BBDA1E81BFDAA690074BB58 /* CanvasWithReplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BBDA1BE1BFDAA690074BB58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ParkSangHa;
+				TargetAttributes = {
+					1BBDA1C51BFDAA690074BB58 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					1BBDA1DC1BFDAA690074BB58 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 1BBDA1C51BFDAA690074BB58;
+					};
+					1BBDA1E71BFDAA690074BB58 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 1BBDA1C51BFDAA690074BB58;
+					};
+				};
+			};
+			buildConfigurationList = 1BBDA1C11BFDAA690074BB58 /* Build configuration list for PBXProject "CanvasWithReplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BBDA1BD1BFDAA690074BB58;
+			productRefGroup = 1BBDA1C71BFDAA690074BB58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BBDA1C51BFDAA690074BB58 /* CanvasWithReplay */,
+				1BBDA1DC1BFDAA690074BB58 /* CanvasWithReplayTests */,
+				1BBDA1E71BFDAA690074BB58 /* CanvasWithReplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BBDA1C41BFDAA690074BB58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBDA1D71BFDAA690074BB58 /* LaunchScreen.storyboard in Resources */,
+				1BBDA1D41BFDAA690074BB58 /* Assets.xcassets in Resources */,
+				1BBDA1CF1BFDAA690074BB58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BBDA1DB1BFDAA690074BB58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BBDA1E61BFDAA690074BB58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BBDA1C21BFDAA690074BB58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBDA1CC1BFDAA690074BB58 /* ViewController.swift in Sources */,
+				1BBDA1D21BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld in Sources */,
+				1BBDA1FD1BFDB7AB0074BB58 /* CanvasView.swift in Sources */,
+				1BBDA1FB1BFDAED80074BB58 /* CustomBezierPath.swift in Sources */,
+				1BBDA1CA1BFDAA690074BB58 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BBDA1D91BFDAA690074BB58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBDA1E21BFDAA690074BB58 /* CanvasWithReplayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BBDA1E41BFDAA690074BB58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBDA1ED1BFDAA690074BB58 /* CanvasWithReplayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BBDA1DF1BFDAA690074BB58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BBDA1C51BFDAA690074BB58 /* CanvasWithReplay */;
+			targetProxy = 1BBDA1DE1BFDAA690074BB58 /* PBXContainerItemProxy */;
+		};
+		1BBDA1EA1BFDAA690074BB58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BBDA1C51BFDAA690074BB58 /* CanvasWithReplay */;
+			targetProxy = 1BBDA1E91BFDAA690074BB58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BBDA1CD1BFDAA690074BB58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BBDA1CE1BFDAA690074BB58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BBDA1D51BFDAA690074BB58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BBDA1D61BFDAA690074BB58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BBDA1EF1BFDAA690074BB58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BBDA1F01BFDAA690074BB58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BBDA1F21BFDAA690074BB58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CanvasWithReplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ParkSangHa.CanvasWithReplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1BBDA1F31BFDAA690074BB58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CanvasWithReplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ParkSangHa.CanvasWithReplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1BBDA1F51BFDAA690074BB58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CanvasWithReplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ParkSangHa.CanvasWithReplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanvasWithReplay.app/CanvasWithReplay";
+			};
+			name = Debug;
+		};
+		1BBDA1F61BFDAA690074BB58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CanvasWithReplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ParkSangHa.CanvasWithReplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanvasWithReplay.app/CanvasWithReplay";
+			};
+			name = Release;
+		};
+		1BBDA1F81BFDAA690074BB58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CanvasWithReplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ParkSangHa.CanvasWithReplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CanvasWithReplay;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1BBDA1F91BFDAA690074BB58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CanvasWithReplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ParkSangHa.CanvasWithReplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CanvasWithReplay;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BBDA1C11BFDAA690074BB58 /* Build configuration list for PBXProject "CanvasWithReplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BBDA1EF1BFDAA690074BB58 /* Debug */,
+				1BBDA1F01BFDAA690074BB58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BBDA1F11BFDAA690074BB58 /* Build configuration list for PBXNativeTarget "CanvasWithReplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BBDA1F21BFDAA690074BB58 /* Debug */,
+				1BBDA1F31BFDAA690074BB58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BBDA1F41BFDAA690074BB58 /* Build configuration list for PBXNativeTarget "CanvasWithReplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BBDA1F51BFDAA690074BB58 /* Debug */,
+				1BBDA1F61BFDAA690074BB58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BBDA1F71BFDAA690074BB58 /* Build configuration list for PBXNativeTarget "CanvasWithReplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BBDA1F81BFDAA690074BB58 /* Debug */,
+				1BBDA1F91BFDAA690074BB58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1BBDA1D01BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1BBDA1D11BFDAA690074BB58 /* CanvasWithReplay.xcdatamodel */,
+			);
+			currentVersion = 1BBDA1D11BFDAA690074BB58 /* CanvasWithReplay.xcdatamodel */;
+			path = CanvasWithReplay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1BBDA1BE1BFDAA690074BB58 /* Project object */;
+}
