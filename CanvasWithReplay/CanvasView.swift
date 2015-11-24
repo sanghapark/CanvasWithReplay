@@ -16,17 +16,13 @@ class CanvasView: UIView {
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         for touch in touches{
-            var path : CustomBezierPath = CustomBezierPath()
-            var point : CGPoint = touch.locationInView(self)
-            
-            var x = point.x
-            var y = point.y
-            
-            
+            let path : CustomBezierPath = CustomBezierPath()
+            let point : CGPoint = touch.locationInView(self)
+
             path.moveToPoint(point)
             path.timelapse = NSDate.timeIntervalSinceReferenceDate()
             
-            var address : String = String(unsafeAddressOf(touch))
+            let address : String = String(unsafeAddressOf(touch))
             print(String(unsafeAddressOf(touch)))
             
             self.ongoingPath[address] = path
@@ -35,17 +31,14 @@ class CanvasView: UIView {
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         for touch in touches{
-            var key = unsafeAddressOf(touch)
+            let key = unsafeAddressOf(touch)
             
             print(key)
             
-            var path = self.ongoingPath[String(key)]
+            let path = self.ongoingPath[String(key)]
             
             let point = touch.locationInView(self)
-            
-            var x = point.x
-            var y = point.y
-            
+
             path!.addLineToPoint(point)
         }
         self.setNeedsDisplay()
@@ -57,10 +50,7 @@ class CanvasView: UIView {
             let path : CustomBezierPath = self.ongoingPath[String(key)] as! CustomBezierPath
             
             let point = touch.locationInView(self)
-            
-            var x = point.x
-            var y = point.y
-            
+
             path.addLineToPoint(point)
             path.timelapse = NSDate.timeIntervalSinceReferenceDate() - path.timelapse!
             

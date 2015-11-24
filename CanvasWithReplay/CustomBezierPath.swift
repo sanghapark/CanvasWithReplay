@@ -12,4 +12,5 @@ class CustomBezierPath : UIBezierPath{
     var timelapse : NSTimeInterval?
     
     
+    
 }
