@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B33AE441C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 1B33AE431C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h */; };
+		1B33AE4B1C05C3C500732E1C /* ReplayCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33AE4A1C05C3C500732E1C /* ReplayCanvasView.swift */; };
 		1BBDA1CA1BFDAA690074BB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */; };
 		1BBDA1CC1BFDAA690074BB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */; };
 		1BBDA1CF1BFDAA690074BB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CD1BFDAA690074BB58 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		1B33AE431C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CanvasWithReplay-Bridging-Header.h"; sourceTree = "<group>"; };
+		1B33AE4A1C05C3C500732E1C /* ReplayCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayCanvasView.swift; sourceTree = "<group>"; };
 		1BBDA1C61BFDAA690074BB58 /* CanvasWithReplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvasWithReplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,8 @@
 				1BBDA1E01BFDAA690074BB58 /* CanvasWithReplayTests */,
 				1BBDA1EB1BFDAA690074BB58 /* CanvasWithReplayUITests */,
 				1BBDA1C71BFDAA690074BB58 /* Products */,
+				3211362B09BA46290C9E3C68 /* Pods */,
+				9BC9D6697AC5ECCB9EB1A0C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,14 +119,15 @@
 			children = (
 				1B33AE391C04826400732E1C /* Supporting Files */,
 				1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */,
-				1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */,
 				1BBDA1CD1BFDAA690074BB58 /* Main.storyboard */,
 				1BBDA1D31BFDAA690074BB58 /* Assets.xcassets */,
 				1BBDA1D51BFDAA690074BB58 /* LaunchScreen.storyboard */,
 				1BBDA1D81BFDAA690074BB58 /* Info.plist */,
 				1BBDA1D01BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld */,
+				1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */,
 				1BBDA1FA1BFDAED80074BB58 /* CustomBezierPath.swift */,
 				1BBDA1FC1BFDB7AB0074BB58 /* CanvasView.swift */,
+				1B33AE4A1C05C3C500732E1C /* ReplayCanvasView.swift */,
 			);
 			path = CanvasWithReplay;
 			sourceTree = "<group>";
@@ -143,6 +148,20 @@
 				1BBDA1EE1BFDAA690074BB58 /* Info.plist */,
 			);
 			path = CanvasWithReplayUITests;
+			sourceTree = "<group>";
+		};
+		3211362B09BA46290C9E3C68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9BC9D6697AC5ECCB9EB1A0C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +299,7 @@
 				1BBDA1D21BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld in Sources */,
 				1BBDA1FD1BFDB7AB0074BB58 /* CanvasView.swift in Sources */,
 				1BBDA1FB1BFDAED80074BB58 /* CustomBezierPath.swift in Sources */,
+				1B33AE4B1C05C3C500732E1C /* ReplayCanvasView.swift in Sources */,
 				1BBDA1CA1BFDAA690074BB58 /* AppDelegate.swift in Sources */,
 				1B33AE441C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h in Sources */,
 			);

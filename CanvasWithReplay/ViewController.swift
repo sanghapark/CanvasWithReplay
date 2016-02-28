@@ -57,8 +57,8 @@ class ViewController: UIViewController {
 
         
         CATransaction.begin()
-        self.canvasView.finishedPaths = NSMutableArray()
-        self.canvasView.ongoingPath = NSMutableDictionary()
+        self.canvasView.finishedPaths.removeAll()
+        self.canvasView.ongoingPath = nil
         for layer in self.canvasView.layer.sublayers!{
             layer.removeFromSuperlayer()
         }
@@ -66,43 +66,64 @@ class ViewController: UIViewController {
         self.canvasView.setNeedsDisplay()
     }
     
+//    func replayButtonPressed(){
+//        self.canvasView.hidden = true
+//        let preview = UIView(frame: self.canvasView.frame)
+//        preview.backgroundColor = UIColor.whiteColor()
+//        self.view.addSubview(preview)
+//        
+//        var total : NSTimeInterval = 0.0
+//        
+//        for path  in self.canvasView.finishedPaths {
+//            let tempPath  = path as! CustomBezierPath
+//            var shapeLayer = CAShapeLayer()
+//            
+//            shapeLayer.path = path.CGPath
+//            shapeLayer.strokeColor = UIColor.blackColor().CGColor
+//            shapeLayer.fillColor = nil
+//            shapeLayer.lineWidth = 1.0
+//            shapeLayer.lineJoin =  kCALineJoinBevel
+//            
+//            var pathAnimation  = CABasicAnimation(keyPath: "strokeEnd")
+//            pathAnimation.duration = tempPath.timelapse!
+//            pathAnimation.fromValue  = String("0.0")
+//            pathAnimation.toValue = String("1.0")
+//            
+//            
+//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(total * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), { () -> Void in
+//                shapeLayer.addAnimation(pathAnimation, forKey: "strokeEnd")
+//                preview.layer.addSublayer(shapeLayer)
+//            })
+//            
+//            total += tempPath.timelapse!
+//            
+//        }
+//        
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(total * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -> Void in
+//            preview.removeFromSuperview()
+//            self.canvasView.hidden = false
+//        }
+//        
+//    }
+    
+    
+    
     func replayButtonPressed(){
+        
         self.canvasView.hidden = true
-        let preview = UIView(frame: self.canvasView.frame)
-        preview.backgroundColor = UIColor.whiteColor()
-        self.view.addSubview(preview)
         
-        var total : NSTimeInterval = 0.0
         
-        for path  in self.canvasView.finishedPaths {
-            let tempPath  = path as! CustomBezierPath
-            var shapeLayer = CAShapeLayer()
-            shapeLayer.path = path.CGPath
-            shapeLayer.strokeColor = UIColor.blackColor().CGColor
-            shapeLayer.fillColor = nil
-            shapeLayer.lineWidth = 1.0
-            shapeLayer.lineJoin =  kCALineJoinBevel
-            
-            var pathAnimation  = CABasicAnimation(keyPath: "strokeEnd")
-            pathAnimation.duration = tempPath.timelapse!
-            pathAnimation.fromValue  = String("0.0")
-            pathAnimation.toValue = String("1.0")
-            
-            
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(total * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), { () -> Void in
-                shapeLayer.addAnimation(pathAnimation, forKey: "strokeEnd")
-                preview.layer.addSublayer(shapeLayer)
-            })
-            
-            total += tempPath.timelapse!
-            
+//        let preview = UIView(frame: self.canvasView.frame)
+//        preview.backgroundColor = UIColor.whiteColor()
+//        self.view.addSubview(preview)
+        
+        let replayView = ReplayCanvasView(frame: self.canvasView.frame)
+        replayView.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(replayView)
+        
+        dispatch_after(1, dispatch_get_main_queue()) { () -> Void in
+            replayView.replay(self.canvasView.finishedPaths)
         }
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(total * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -> Void in
-            preview.removeFromSuperview()
-            self.canvasView.hidden = false
-        }
-        
     }
     
     
