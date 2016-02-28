@@ -82,11 +82,9 @@ class ReplayCanvasView: UIView {
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
         for path in finishedPaths{
-            path.lineWidth = 5.0
             path.stroke()
         }
         if let _ = self.ongoingPath {
-            self.ongoingPath!.lineWidth = 5.0
             self.ongoingPath!.stroke()
         }
     }
