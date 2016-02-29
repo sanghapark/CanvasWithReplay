@@ -23,14 +23,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
         self.canvasView = CanvasView()
         self.canvasView.frame = self.view.frame
         self.canvasView.backgroundColor = UIColor.lightGrayColor()
         self.view.addSubview(self.canvasView)
-        
         
         self.clearButton.setTitle("Clear", forState: UIControlState.Normal)
         self.clearButton.sizeToFit()
@@ -48,77 +44,20 @@ class ViewController: UIViewController {
         
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     
     func clearButtonPressed(){
-
-        
-        CATransaction.begin()
         self.canvasView.finishedPaths.removeAll()
         self.canvasView.ongoingPath = nil
-        for layer in self.canvasView.layer.sublayers!{
-            layer.removeFromSuperlayer()
-        }
-        CATransaction.commit()
+        self.canvasView.startTime = NSDate.timeIntervalSinceReferenceDate()
         self.canvasView.setNeedsDisplay()
     }
-    
-//    func replayButtonPressed(){
-//        self.canvasView.hidden = true
-//        let preview = UIView(frame: self.canvasView.frame)
-//        preview.backgroundColor = UIColor.whiteColor()
-//        self.view.addSubview(preview)
-//        
-//        var total : NSTimeInterval = 0.0
-//        
-//        for path  in self.canvasView.finishedPaths {
-//            let tempPath  = path as! CustomBezierPath
-//            var shapeLayer = CAShapeLayer()
-//            
-//            shapeLayer.path = path.CGPath
-//            shapeLayer.strokeColor = UIColor.blackColor().CGColor
-//            shapeLayer.fillColor = nil
-//            shapeLayer.lineWidth = 1.0
-//            shapeLayer.lineJoin =  kCALineJoinBevel
-//            
-//            var pathAnimation  = CABasicAnimation(keyPath: "strokeEnd")
-//            pathAnimation.duration = tempPath.timelapse!
-//            pathAnimation.fromValue  = String("0.0")
-//            pathAnimation.toValue = String("1.0")
-//            
-//            
-//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(total * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), { () -> Void in
-//                shapeLayer.addAnimation(pathAnimation, forKey: "strokeEnd")
-//                preview.layer.addSublayer(shapeLayer)
-//            })
-//            
-//            total += tempPath.timelapse!
-//            
-//        }
-//        
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(total * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -> Void in
-//            preview.removeFromSuperview()
-//            self.canvasView.hidden = false
-//        }
-//        
-//    }
     
     
     
     func replayButtonPressed(){
         
         self.canvasView.hidden = true
-        
-        
-//        let preview = UIView(frame: self.canvasView.frame)
-//        preview.backgroundColor = UIColor.whiteColor()
-//        self.view.addSubview(preview)
         
         self.replayView = ReplayCanvasView(frame: self.canvasView.frame)
         self.replayView.backgroundColor = UIColor.lightGrayColor()
