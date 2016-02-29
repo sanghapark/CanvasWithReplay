@@ -14,9 +14,11 @@ class ViewController: UIViewController {
     var clearButton : UIButton = UIButton(frame: CGRectZero)
     var replayButton : UIButton = UIButton(frame: CGRectZero)
     
-    var canvasView : CanvasView = CanvasView(frame: CGRectZero)
+    var resetButton : UIButton = UIButton(frame: CGRectZero)
     
-
+    var canvasView : CanvasView!
+    
+    var replayView: ReplayCanvasView = ReplayCanvasView(frame: CGRectZero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,7 @@ class ViewController: UIViewController {
         
         
         
+        self.canvasView = CanvasView()
         self.canvasView.frame = self.view.frame
         self.canvasView.backgroundColor = UIColor.lightGrayColor()
         self.view.addSubview(self.canvasView)
@@ -33,14 +36,14 @@ class ViewController: UIViewController {
         self.clearButton.sizeToFit()
         self.clearButton.center.x = self.clearButton.frame.height
         self.clearButton.center.y = self.clearButton.frame.height
-        self.clearButton.addTarget(self, action: "clearButtonPressed", forControlEvents: UIControlEvents.TouchDown)
+        self.clearButton.addTarget(self, action: "clearButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(self.clearButton)
         
         self.replayButton.setTitle("Replay", forState: UIControlState.Normal)
         self.replayButton.sizeToFit()
         self.replayButton.center.x = UIScreen.mainScreen().bounds.width - self.replayButton.frame.height
         self.replayButton.center.y = self.replayButton.frame.height
-        self.replayButton.addTarget(self, action: "replayButtonPressed", forControlEvents: UIControlEvents.TouchDown)
+        self.replayButton.addTarget(self, action: "replayButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(self.replayButton)
         
         
@@ -117,13 +120,29 @@ class ViewController: UIViewController {
 //        preview.backgroundColor = UIColor.whiteColor()
 //        self.view.addSubview(preview)
         
-        let replayView = ReplayCanvasView(frame: self.canvasView.frame)
-        replayView.backgroundColor = UIColor.whiteColor()
-        self.view.addSubview(replayView)
+        self.replayView = ReplayCanvasView(frame: self.canvasView.frame)
+        self.replayView.backgroundColor = UIColor.lightGrayColor()
+        self.view.addSubview(self.replayView)
+        
+        self.resetButton.setTitle("Reset", forState: UIControlState.Normal)
+        self.resetButton.sizeToFit()
+        self.resetButton.center.x = self.resetButton.frame.height
+        self.resetButton.center.y = self.resetButton.frame.height
+        self.resetButton.addTarget(self, action: "resetButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(self.resetButton)
+        
         
         dispatch_after(1, dispatch_get_main_queue()) { () -> Void in
-            replayView.replay(self.canvasView.finishedPaths)
+            self.replayView.replay(self.canvasView.finishedPaths)
         }
+    }
+    
+    
+    func resetButtonPressed(){
+        for subview in self.view.subviews {
+            subview.removeFromSuperview()
+        }
+        self.viewDidLoad()
     }
     
     
