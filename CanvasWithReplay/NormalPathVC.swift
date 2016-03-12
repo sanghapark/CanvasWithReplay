@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NormalPathVC
 //  CanvasWithReplay
 //
 //  Created by ParkSangHa on 2015. 11. 19..
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NormalPathVC: UIViewController {
     
     
     var clearButton : UIButton = UIButton(frame: CGRectZero)

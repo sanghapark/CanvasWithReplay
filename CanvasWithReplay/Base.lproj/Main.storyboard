@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="676" y="537"/>
         </scene>
-        <!--View Controller-->
+        <!--Normal PathVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CanvasWithReplay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NormalPathVC" customModule="CanvasWithReplay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

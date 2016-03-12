@@ -13,7 +13,7 @@
 		1B33AE4B1C05C3C500732E1C /* ReplayCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33AE4A1C05C3C500732E1C /* ReplayCanvasView.swift */; };
 		1BB7027E1C94383700F625A6 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7027D1C94383700F625A6 /* BaseVC.swift */; };
 		1BBDA1CA1BFDAA690074BB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */; };
-		1BBDA1CC1BFDAA690074BB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */; };
+		1BBDA1CC1BFDAA690074BB58 /* NormalPathVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CB1BFDAA690074BB58 /* NormalPathVC.swift */; };
 		1BBDA1CF1BFDAA690074BB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CD1BFDAA690074BB58 /* Main.storyboard */; };
 		1BBDA1D21BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1D01BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld */; };
 		1BBDA1D41BFDAA690074BB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BBDA1D31BFDAA690074BB58 /* Assets.xcassets */; };
@@ -49,7 +49,7 @@
 		1BB7027D1C94383700F625A6 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		1BBDA1C61BFDAA690074BB58 /* CanvasWithReplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvasWithReplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BBDA1CB1BFDAA690074BB58 /* NormalPathVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalPathVC.swift; sourceTree = "<group>"; };
 		1BBDA1CE1BFDAA690074BB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BBDA1D11BFDAA690074BB58 /* CanvasWithReplay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CanvasWithReplay.xcdatamodel; sourceTree = "<group>"; };
 		1BBDA1D31BFDAA690074BB58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 				1BBDA1D51BFDAA690074BB58 /* LaunchScreen.storyboard */,
 				1BBDA1D81BFDAA690074BB58 /* Info.plist */,
 				1BBDA1D01BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld */,
-				1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */,
+				1BBDA1CB1BFDAA690074BB58 /* NormalPathVC.swift */,
 				1BBDA1FA1BFDAED80074BB58 /* CustomBezierPath.swift */,
 				1BBDA1FC1BFDB7AB0074BB58 /* CanvasView.swift */,
 				1B33AE4A1C05C3C500732E1C /* ReplayCanvasView.swift */,
@@ -304,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BBDA1CC1BFDAA690074BB58 /* ViewController.swift in Sources */,
+				1BBDA1CC1BFDAA690074BB58 /* NormalPathVC.swift in Sources */,
 				1B0A93FF1C8436E800AFA98C /* Scribblable.swift in Sources */,
 				1BBDA1D21BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld in Sources */,
 				1BBDA1FD1BFDB7AB0074BB58 /* CanvasView.swift in Sources */,
