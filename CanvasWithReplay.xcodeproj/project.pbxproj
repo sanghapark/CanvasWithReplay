@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0A93FF1C8436E800AFA98C /* Scribblable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A93FD1C8436E800AFA98C /* Scribblable.swift */; };
+		1B0A94001C8436E800AFA98C /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A93FE1C8436E800AFA98C /* UIBezierPathExtension.swift */; };
 		1B33AE441C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 1B33AE431C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h */; };
 		1B33AE4B1C05C3C500732E1C /* ReplayCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33AE4A1C05C3C500732E1C /* ReplayCanvasView.swift */; };
+		1BB7027E1C94383700F625A6 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7027D1C94383700F625A6 /* BaseVC.swift */; };
 		1BBDA1CA1BFDAA690074BB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */; };
 		1BBDA1CC1BFDAA690074BB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */; };
 		1BBDA1CF1BFDAA690074BB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBDA1CD1BFDAA690074BB58 /* Main.storyboard */; };
@@ -39,8 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B0A93FD1C8436E800AFA98C /* Scribblable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scribblable.swift; sourceTree = "<group>"; };
+		1B0A93FE1C8436E800AFA98C /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
 		1B33AE431C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CanvasWithReplay-Bridging-Header.h"; sourceTree = "<group>"; };
 		1B33AE4A1C05C3C500732E1C /* ReplayCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayCanvasView.swift; sourceTree = "<group>"; };
+		1BB7027D1C94383700F625A6 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		1BBDA1C61BFDAA690074BB58 /* CanvasWithReplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvasWithReplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBDA1C91BFDAA690074BB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BBDA1CB1BFDAA690074BB58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 		1B33AE391C04826400732E1C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B0A93FD1C8436E800AFA98C /* Scribblable.swift */,
+				1B0A93FE1C8436E800AFA98C /* UIBezierPathExtension.swift */,
 				1B33AE431C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
@@ -128,6 +136,7 @@
 				1BBDA1FA1BFDAED80074BB58 /* CustomBezierPath.swift */,
 				1BBDA1FC1BFDB7AB0074BB58 /* CanvasView.swift */,
 				1B33AE4A1C05C3C500732E1C /* ReplayCanvasView.swift */,
+				1BB7027D1C94383700F625A6 /* BaseVC.swift */,
 			);
 			path = CanvasWithReplay;
 			sourceTree = "<group>";
@@ -296,12 +305,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BBDA1CC1BFDAA690074BB58 /* ViewController.swift in Sources */,
+				1B0A93FF1C8436E800AFA98C /* Scribblable.swift in Sources */,
 				1BBDA1D21BFDAA690074BB58 /* CanvasWithReplay.xcdatamodeld in Sources */,
 				1BBDA1FD1BFDB7AB0074BB58 /* CanvasView.swift in Sources */,
 				1BBDA1FB1BFDAED80074BB58 /* CustomBezierPath.swift in Sources */,
 				1B33AE4B1C05C3C500732E1C /* ReplayCanvasView.swift in Sources */,
+				1B0A94001C8436E800AFA98C /* UIBezierPathExtension.swift in Sources */,
 				1BBDA1CA1BFDAA690074BB58 /* AppDelegate.swift in Sources */,
 				1B33AE441C0486FB00732E1C /* CanvasWithReplay-Bridging-Header.h in Sources */,
+				1BB7027E1C94383700F625A6 /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

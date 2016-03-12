@@ -31,14 +31,14 @@ class ViewController: UIViewController {
         self.clearButton.setTitle("Clear", forState: UIControlState.Normal)
         self.clearButton.sizeToFit()
         self.clearButton.center.x = self.clearButton.frame.height
-        self.clearButton.center.y = self.clearButton.frame.height
+        self.clearButton.center.y = self.clearButton.frame.height + self.navigationController!.toolbar.frame.size.height
         self.clearButton.addTarget(self, action: "clearButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(self.clearButton)
         
         self.replayButton.setTitle("Replay", forState: UIControlState.Normal)
         self.replayButton.sizeToFit()
         self.replayButton.center.x = UIScreen.mainScreen().bounds.width - self.replayButton.frame.height
-        self.replayButton.center.y = self.replayButton.frame.height
+        self.replayButton.center.y = self.replayButton.frame.height + self.navigationController!.toolbar.frame.size.height
         self.replayButton.addTarget(self, action: "replayButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(self.replayButton)
         
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         self.resetButton.setTitle("Reset", forState: UIControlState.Normal)
         self.resetButton.sizeToFit()
         self.resetButton.center.x = self.resetButton.frame.height
-        self.resetButton.center.y = self.resetButton.frame.height
+        self.resetButton.center.y = self.resetButton.frame.height + self.navigationController!.toolbar.frame.size.height
         self.resetButton.addTarget(self, action: "resetButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(self.resetButton)
         
